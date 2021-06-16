@@ -1,0 +1,133 @@
+<HTML>
+    <HEAD>
+    <TITLE> Home </TITLE>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>    
+    </HEAD> 
+    <BODY>
+      <div class="d-flex" id="wrapper">
+        <div class="border-end" id="sidebar-wrapper">
+            <h1>Menu</h1>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.html">Home - quien soy</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="Proyectos.html">Proyectos</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="Contacto.html">Contacto</a>
+            </div>
+        </div>
+        <div id="page-content-wrapper">
+          <nav class="navbar navbar-expand-lg navbar-light"> 
+            <button type="button" class="btn btn-outline-light" id="sidebarToggle">Menu</button>                 
+          </nav>
+          <video id="video1" loop>
+            <source src="vidio.mp4" type="video/mp4">
+          </video>
+          <div id="contenido">
+            <div id="titulo"> 
+              <h1>Portafolio</h1>
+              <br>
+              <h2>Daniel Mauricio Pico De Alba</h2>
+              <br>
+              <br>
+              <button type="button" class="btn btn-outline-light" onclick="playPause()">Play/Pause</button>      
+            </div>
+            <div id="info">
+              <div id="frase">
+                <h1 class="mt-4">Simple Sidebar</h1>
+                <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
+                <p>
+                  Make sure to keep all page content within the
+                  <code>#page-content-wrapper</code>
+                  . The top navbar is optional, and just for demonstration. Just create an element with the
+                  <code>#sidebarToggle</code>
+                  ID which will toggle the menu when clicked.
+                </p>              
+              </div> 
+              <div id="tabla" class="row">
+
+                <div id="rightcolumn" class="column">
+                  <div id="rightcontainer">
+                    <h1>PERFIL PROFESIONAL</h1>
+                      <p>
+                        Estudiante de sexto semestre de ingeniería multimedia, con conocimientos en programación: <br>
+                        -JAVASCRIPT (nivel alto)<br>
+                        -HTML (nivel alto), <br>
+                        -CSS (nivel alto), <br>
+                        -XAMARIN (nivel alto), <br>
+                        -C# (nivel alto),<br>
+                        -PYTHON (nivel medio). <br>
+                        Además de otros dominios en modelado 3D como lo es Maya (nivel alto), Mudbox (nivel medio), y Blende 
+                        r(nivel medio), y conocimientos en audio e imagen con Protools, premiere, Photoshop, Adobe XD y After 
+                        Effects.
+                      </p>
+                      <br><h1>FORMACIóN ACADÉMICA</h1>                         
+                    <p>
+                      • Titulo esperado en Ingeniería Multimedia 2021<br>
+                      Universidad San Buenaventura Bogotá – Colombia<br>
+                      • Bachiller académico 2016<br>
+                      Colegio Bolívar de Soacha Cundinamarca – Colombia<br>
+                      • Básica primaria 2011<br>
+                      Colegio Bolívar de Soacha Cundinamarca – Colombia<br>
+                    </p>
+                    <br><h1>EXPERIENCIA LABORAL</h1>                         
+                    <p>
+                      • Gameday – Asesor de ventas en Feria del Libro, SOFA, Ferias en centros comerciales.<br>
+                      • Modap comunicación – Fotografía, Logística de eventos, editor de videos .<br>
+                    </p>
+                    <br><h1>CURSOS REALIZADOS</h1>                         
+                    <p>
+                      • Curso de actuación.<br>
+                      Pronartes.<br>
+                      • Curso de Inglés.<br>
+                      American Council – avanzado 1<br>
+                    </p>
+                    <br><h1>INVESTIGACIONES Y/O PROYECTOS REALIZADOS</h1>                         
+                    <p>
+                      • Proyecto De Realidad virtual Usando Leap Motion.<br>
+                      Universidad de San Buenaventura.<br>
+                    </p>                  
+                  </div>
+                </div>        
+                <div id="leftcolumn" class="column" >
+                  <div id="leftcontainer">
+                    <h1>Trabajos y proyectos</h1><br> 
+                    <div id="alfrente"><img class="card-img-top" src="resources/imagen1.JPG"></div>
+                    <div id="atras"><img class="card-img-top" src="resources/imagen2.JPG"></div>
+                    <div id="alfrente"><img class="card-img-top" src="resources/imagen3.JPG"></div>
+                    <div id="atras"><img class="card-img-top" src="resources/imagen4.JPG"></div>
+                    <br><br> 
+                    <button type="button" class="btn btn-outline-light" role="link" onclick="window.location='Proyectos.html'">Ver Proyectos</button>    
+                  </div>
+                </div>  
+              </div>
+          </div>
+          </div>
+      </div>
+  </div>  
+<footer>
+<h1>Contacto:</h1>Mi nombre es Daniel Mauricio Pico y Soy ingeniero multimedia de la Universidad San buenaventura
+<br>
+<br>
+<img src="resources/facebookicon.png" height="100" width="100" class="rounded" onclick="">
+<img src="resources/instagramicon.png" height="100" width="100" class="rounded" onclick="">
+<img src="resources/youtubeicon.png" height="100" width="100" class="rounded" onclick="">
+<br>
+<br>
+© 2021 Daniel Mauricio Pico De Alba. Todos los derechos reservados.
+</footer> 
+    </BODY>
+    </HTML>
+<script> 
+var myVideo = document.getElementById("video1"); 
+myVideo.play();
+function playPause() { 
+  if(myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+</script> 
