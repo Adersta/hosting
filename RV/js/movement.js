@@ -75,7 +75,7 @@ AFRAME.registerComponent('puntosdecontrol', {
       //el.addEventListener('raycaster-intersection', function () {
       //document.querySelector('#player').setAttribute('position', el.getAttribute('position'));
       //document.querySelector('#player').setAttribute('position', el.getAttribute('position'));  
-      document.querySelector('#player').setAttribute('position', el.getAttribute('position'));
+      //document.querySelector('#player').setAttribute('position', el.getAttribute('position'));
       console.log('Player hit something!');
       /*timer = timer + 0.1;
       if(timer > 2.5){
