@@ -68,9 +68,10 @@ AFRAME.registerComponent('puntosdecontrol', {
     init() {
        
       //var timer = 0;     
-      var el = this.el;
+      var objetive = this.el;
+      var player = document.querySelector('#player');
     
-    el.addEventListener('click', () => {
+      objetive.addEventListener('click', () => {
       //el.addEventListener('raycaster-intersection', function () {
       //document.querySelector('#player').setAttribute('position', el.getAttribute('position'));
       //document.querySelector('#player').setAttribute('position', el.getAttribute('position'));  
@@ -83,6 +84,8 @@ AFRAME.registerComponent('puntosdecontrol', {
         console.log('Player hit something!');
         timer = 0;
       }    */        
+
+      player.setAttribute('position',objetive.getAttribute('position'));
        
     }); 
         
