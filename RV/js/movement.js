@@ -1,32 +1,33 @@
-  AFRAME.registerSystem("goto", {
+
+  AFRAME.registerSystem("puntosdecontrol", {
     init: function() {
-      // global - shared between all goto components
+      // global - shared between all puntosdecontrol components
       this.isMoving = false;
     }
   });
 
-  AFRAME.registerComponent("goto", {
+  AFRAME.registerComponent("puntosdecontrol", {
     init: function() {
-      let rig = document.querySelector("#pov");
-      rig.addEventListener("animationcomplete", e => {
+      let cameraplayer = document.querySelector("#player");
+      cameraplayer.addEventListener("animationcomplete", e => {
         this.system.isMoving = false;
       });
       this.el.addEventListener("click", e => {
         if (this.system.isMoving) return;
         let targetPos = this.el.getAttribute("position");
-        let rigPos = rig.getAttribute("position");
+        let cameraplayerPos = cameraplayer.getAttribute("position");
         this.system.isMoving = true;
 
-        rig.setAttribute("animation", {
-          from: rigPos,
+        cameraplayer.setAttribute("animation", {
+          from: cameraplayerPos,
           to: AFRAME.utils.coordinates.stringify({
             x: targetPos.x,
-            y: rigPos.y,
+            y: cameraplayerPos.y,
             z: targetPos.z
           }),
-          dur: targetPos.distanceTo(rigPos) * 750
+          dur: targetPos.distanceTo(cameraplayerPos) * 100
         });
-        rig.emit("go");
+        cameraplayer.emit("go");
       });
     }
   });
