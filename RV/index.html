@@ -1,0 +1,59 @@
+<html>
+  <head>
+      <title>A-Frame Starter Kit - Mini Planetarium</title>
+      "Village Town" (https://skfb.ly/6GKIM) by Shapesim VR level designer is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+      <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script> 
+      <script src="js/movement.js"></script>     
+  </head>
+  <body>
+      <a-scene inspector="url: https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
+        --><a-cube position="-1 0.5 1" rotation="0 0 0" width="1" height="1" depth="1" color="#4CC3D9">
+          <a-animation attribute="position" to="1.351 0.1 0" direction="alternate-reverse" repeat="indefinite" easing="linear" dur="1000"></a-animation>
+          <a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation>
+        </a-cube>
+        <a-sky color="#00FFEC"></a-sky>
+        <a-entity id="blueTPSphere" geometry="primitive:sphere;radius:0.2" material="color:blue;roughness:1" position="-4.1515 2.33397 5.95313" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-2" geometry="primitive:sphere;radius:0.2" material="color:blue;roughness:1" position="3.89221 2.884 0.43037" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-3" geometry="primitive:sphere;radius:0.2" material="color:blue;roughness:1" position="2.69544 2.884 -11.62932" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-4" geometry="primitive:sphere;radius:0.2" material="color:blue;roughness:1" position="7.54354 2.884 -15.62183" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-5" geometry="primitive:sphere;radius:0.2" material="color:blue;roughness:1" position="12.26016 2.884 -19.94105" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-6" geometry="primitive:sphere;radius:0.2" material="color:blue;roughness:1" position="18.69767 2.884 -20.5867" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-7" geometry="primitive:sphere;radius:0.2" material="color:blue;roughness:1" position="26.54025 2.884 -18.47527" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-8" geometry="primitive:sphere;radius:0.2" material="color:blue;roughness:1" position="31.27447 2.884 -10.0754" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-9" geometry="primitive:sphere;radius:0.2" material="color:blue;roughness:1" position="28.39307 2.884 -2.30815" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-10" geometry="primitive:sphere;radius:0.2" material="color:blue;roughness:1" position="22.09341 2.884 7.54181" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-11" geometry="primitive:sphere;radius:0.2" material="color:blue;roughness:1" position="11.46692 2.884 2.54969" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-12" geometry="primitive:sphere;radius:0.2" material="color:blue;roughness:1" position="20.58584 2.884 15.11313" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-13" geometry="primitive:sphere;radius:0.2" material="color:blue;roughness:1" position="17.52499 2.884 20.87451" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-14" geometry="primitive:sphere;radius:0.2" material="color:blue;roughness:1" position="12.48289 2.884 26.32224" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-15" geometry="primitive:sphere;radius:0.2" material="color:blue;roughness:1" position="5.58104 2.884 23.83828" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-16" geometry="primitive:sphere;radius:0.2" material="color:blue;roughness:1" position="2.57963 2.884 19.6036" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-17" geometry="primitive:sphere;radius:0.2" material="color:blue;roughness:1" position="-9.08066 2.884 11.42625" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-18" geometry="primitive:sphere;radius:0.2" material="color:blue;roughness:1" position="-14.24619 2.884 3.33018" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-19" geometry="primitive:sphere;radius:0.2" material="color:blue;roughness:1" position="-13.03568 2.884 -5.38742" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-20" geometry="primitive:sphere;radius:0.2" material="color:blue;roughness:1" position="-6.47292 2.884 -8.96331" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="floor" static-body geometry="depth:100;height:0.2;width:100;" color="#7BC8A4"></a-entity>  
+        <a-entity id="floor" static-body geometry="depth:100;height:0.2;width:100;" position="0 -50 0" color="#7BC8A4"></a-entity>  
+      <a-entity  id="ninja01"
+                cursor-listener
+                scale="1 1 1"
+                position="0 2 0"
+                rotation="0 0 0"
+                gltf-model="src: url(resources/source/1.gltf);"       
+      ></a-entity>
+
+      <a-entity position="0 2 4" scale="1 1 1" id="player" animation="property: position; dur: 1000; startEvents: go">
+        <a-camera look-controls wasd-controls-enabled="false">
+          <a-entity position="-1.75 1.15 -1.633" material="opacity: 0.0; transparent: true" geometry="primitive:plane;height:3;width:7" 
+          text="align:center;color:#322342;
+          value:Village Town (https://skfb.ly/6GKIM) by Shapesim VR level designer is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+          ;width:50" id="text-health-player" scale="0.04 0.04 0.04" color="#322342">
+          </a-entity>
+          <a-entity cursor="fuse: true; fuseTimeout: 500" position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" 
+          material="color: green; shader: flat">     
+         </a-entity>             
+        </a-camera>
+      </a-entity>    
+      </a-scene>
+  </body>
+</html>
