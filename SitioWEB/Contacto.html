@@ -1,0 +1,56 @@
+<HTML>
+    <HEAD>
+    <TITLE> Contacto </TITLE>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>    
+    </HEAD> 
+    <BODY>
+      <div class="d-flex" id="wrapper">
+        <div class="border-end" id="sidebar-wrapper">
+            <h1>Menu</h1>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.html">Home - quien soy</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="Proyectos.html">Proyectos</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="Contacto.html">Contacto</a>
+            </div>
+        </div>
+        <div id="page-content-wrapper">
+          <nav class="navbar navbar-expand-lg navbar-light"> 
+            <button type="button" class="btn btn-outline-light" id="sidebarToggle">Menu</button>                 
+          </nav>
+          <div id="formulario">
+            <br><h1>Contacto</h1><br>                        
+            <p>
+              Escriba un correo y/o escribame a traves de mis redes sociales ubicadas en el pie de pagina de la web<br></p><br>
+            <form>
+                <input class="form-control" type="text" placeholder="Remitente"><br>
+                <input class="form-control" type="text" placeholder="Asunto">  <br>          
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Mensaje</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                  <button type="submit" class="btn btn-outline-light">Enviar</button>
+              </form>
+          </div>        
+      </div>
+  </div>  
+  <footer>
+    <h1></h1>Correo: danielpico2000@hotmail.es
+    <br>
+    © 2021 Daniel Mauricio Pico De Alba. Todos los derechos reservados. - Adersta
+    </footer> 
+    </BODY>
+    </HTML>
+
+<?php     
+$to_email = 'name @ company . com';
+$subject = 'Testing PHP Mail';
+$message = 'This mail is sent using the PHP mail function';
+$headers = 'From: noreply @ company . com';
+mail($to_email,$subject,$message,$headers);
+?>
