@@ -110,7 +110,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     }
 }
 
-@media (max-width:320px) {
+@media screen and (max-width:320px) {
 
 	*{
 		font-size: 25px;
