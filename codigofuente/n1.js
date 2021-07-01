@@ -38,7 +38,7 @@ var n1={
 	game.load.spritesheet('checkpoint', 'assets/Witch.png', 92, 114);
 
 
-			game.load.tilemap('map', 'assets/map1.CSV', null, Phaser.Tilemap.CSV);
+			game.load.tilemap('map', 'assets/map1.csv', null, Phaser.Tilemap.CSV);
 			game.load.image('tiles', 'assets/tiled1.png');
 			game.load.image('barra', 'assets/barra.png');
             game.load.image('background', 'assets/background.jpg');
