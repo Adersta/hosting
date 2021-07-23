@@ -1,0 +1,24 @@
+<HTML>
+    <HEAD>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </HEAD>
+    <BODY>
+      <div id="cuerpo">
+      </div>
+    </BODY>
+  </HTML>
+  <script>
+
+ function detectMob() {
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        console.log("celular");
+        window.location.href = "mobileversion.html";
+    }
+    else{
+        console.log("pc");
+        window.location.href = "pcversion.html";
+    }
+  }
+
+  detectMob();  
+  </script> 
