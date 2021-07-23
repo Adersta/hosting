@@ -28,7 +28,8 @@ console.log(w);
 var n1={
    preload:function () 
 {
-	        //game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+	        game.scale.startFullScreen(true);
+	//game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
             //game.scale.setMinMax(400, 300, 2248, 1080);
 			//new ScaleManager(game, 2248, 1080)
 			//this.game.scale.fullScreenScaleMode = Phaser.ScaleManager.SHOW_ALL;
