@@ -31,7 +31,7 @@ var n1={
 	        //game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
             //game.scale.setMinMax(400, 300, 2248, 1080);
 			//new ScaleManager(game, 2248, 1080)
-			//game.scale.setGameSize(w/2, h/2);
+			game.scale.setGameSize(w/2, h/2);
             game.scale.startFullScreen(true);
 	        game.load.spritesheet('checkpoint', 'assets/Witch.png', 92, 114);
 	        game.load.tilemap('map', 'assets/map1.csv', null, Phaser.Tilemap.CSV);
