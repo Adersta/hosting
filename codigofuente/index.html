@@ -1,0 +1,23 @@
+<HTML>
+    <HEAD>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </HEAD>
+    <BODY>
+      <div id="cuerpo">
+      </div>
+    </BODY>
+  </HTML>
+  <script>
+  
+  function  navegador(){
+      var agente = navigator.platform;
+      console.log(agente);
+      if(agente = "win32"){
+        window.location.href = "pcversion.html";
+          }
+      else{
+        window.location.href = "mobileversion.html";
+      }
+  }
+  navegador();  
+  </script> 
