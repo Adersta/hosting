@@ -34,7 +34,7 @@ var n1={
 	game.load.image('puntero', 'assets/puntero.png');
 	game.load.image('greenarea', 'assets/greenarea.png');
 	game.load.image('atari2', 'assets/doll.png');
-	game.load.image('powerbar', 'assets/powerbar.jpg');
+	game.load.image('powerbar', 'assets/powerbar.JPG');
 	game.load.image('background', 'assets/background.jpg');
 	game.load.video('video', 'assets/video.mp4');
 	game.load.video('videopart2', 'assets/parte2.mp4');
