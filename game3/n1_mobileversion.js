@@ -125,11 +125,11 @@ create:function ()
 	powerbar.visible = 0;
 
 	//FINAL PHASE SCORE
-	shoot = game.add.text(game.world.centerX, game.world.centerY-100,  '', { font: '30px Arial', fill: '#000000' });
+	shoot = game.add.text(game.world.centerX, game.world.centerY-100,  '', { font: '30px Arial', fill: '#00FFEC' });
 	shoot.anchor.setTo(0.5, 0.5);
 	shoot.fixedToCamera = true;
 		
-	Finalscore = game.add.text(game.world.centerX, game.world.centerY-70,  '', { font: '30px Arial', fill: '#000000' });
+	Finalscore = game.add.text(game.world.centerX, game.world.centerY-70,  '', { font: '30px Arial', fill: '#00FFEC' });
 	Finalscore.anchor.setTo(0.5, 0.5);
 	Finalscore.fixedToCamera = true;
 
@@ -405,11 +405,11 @@ quest:function(){
 	menu.fixedToCamera = true;
 
 	// And a label to illustrate which menu item was chosen. (This is not necessary)
-	choiseLabel = game.add.text(w/4, h/4 + 10 , ''+preguntas[RanQuest], { font: '30px Arial', fill: '#000000' });
+	choiseLabel = game.add.text(w/4, h/4 + 10 , ''+preguntas[RanQuest], { font: '30px Arial', fill: '#00FFEC' });
 	choiseLabel.anchor.setTo(0.5, 0.5);
 	choiseLabel.fixedToCamera = true;
 
-	contextlabel = game.add.text(w/4, h/4 + 40, ''+contextPreguntas[RanQuest], { font: '30px Arial', fill: '#000000' });
+	contextlabel = game.add.text(w/4, h/4 + 40, ''+contextPreguntas[RanQuest], { font: '30px Arial', fill: '#00FFEC' });
 	contextlabel.anchor.setTo(0.5, 0.5);
 	contextlabel.fixedToCamera = true;
 	
@@ -525,13 +525,13 @@ function Restart(){
 
 	sprite2.destroy();
 
-	sprite2 = objetive.create(400, 100, 'atari2');
+	sprite2 = objetive.create(game.world.centerX-200, game.world.centerY-150, 'atari2');
 	sprite2.body.setCircle(16);
 	sprite2.body.fixedRotation = true;
 
 
 	punteropowerbar.destroy();
-	punteropowerbar = puntero2.create(w/2 -151, h-100, 'puntero');
+	punteropowerbar = puntero2.create(game.world.centerX-100, game.world.centerY+140, 'puntero');
 
 
 		CinematicaGamefase = true;
