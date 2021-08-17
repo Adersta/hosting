@@ -1,0 +1,57 @@
+<HTML>
+	<HEAD>
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	</HEAD>
+	<BODY>
+	</BODY>
+  
+  
+  
+  </HTML>
+  
+<script src=" https://cdnjs.cloudflare.com/ajax/libs/phaser-ce/2.16.1/phaser.min.js"></script>
+<script src="phaser.min.js"></script>
+<script src="n1_mobileversion.js"></script>
+
+  <script>
+  
+  WebFontConfig = {
+  
+	  active: function() { game.time.events.add(Phaser.Timer.SECOND, createText, this); },
+  
+	  google: {
+		families: ['Revalia']
+	  }
+  
+  };
+  
+  //var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example');
+  //var gameRatio = window.innerWidth/window.innerHeight;		
+  //var game = new Phaser.Game(Math.ceil(640*gameRatio), 640, Phaser.CANVAS);
+  
+  //var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example');
+  var config = {
+	  type: Phaser.AUTO,
+	  height: 720,
+	  width: 1280,
+	  //width: 1280,
+      //height: 720,
+	  backgroundColor: '#010101',
+	  //parent: 'phaser-example'
+	  parent: document.getElementById("divPhaser")
+  };
+  
+  
+  var game = new Phaser.Game(config);
+  
+
+  game.state.add("n1",n1);
+  game.state.start("n1",n1);
+  
+
+
+  h = 720;
+  w = 1280;
+
+
+  </script> 
