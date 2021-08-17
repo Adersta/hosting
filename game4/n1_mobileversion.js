@@ -22,6 +22,8 @@ var s;
 
 var NumBlockDestroy = 0;
 var totalBricks = 0;
+var left=false;
+var right=false;
 
 
 var n1={
