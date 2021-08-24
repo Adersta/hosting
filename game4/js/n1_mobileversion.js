@@ -75,7 +75,7 @@ create:function ()
             brick.body.immovable = true;
         }
     }
-    paddle = game.add.sprite(game.world.centerX, game.world.centerY+170, 'paddle');
+    paddle = game.add.sprite(game.world.centerX, game.world.centerY+100, 'paddle');
     paddle.anchor.setTo(0.5, 0.5);
     game.physics.enable(paddle, Phaser.Physics.ARCADE);
     paddle.body.collideWorldBounds = true;
@@ -196,8 +196,10 @@ function releaseBall () {
     if (ballOnPaddle)
     {
         ballOnPaddle = false;
-        ball.body.velocity.y = -300;
-        ball.body.velocity.x = -75;
+        //ball.body.velocity.y = -300;
+        ball.body.velocity.y = -100;
+        //ball.body.velocity.x = -75;
+        ball.body.velocity.x = -10;
         ball.animations.play('spin');
         introText.visible = false;
     }
