@@ -1,0 +1,31 @@
+<HTML>
+	<HEAD>
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	</HEAD>
+	<BODY>
+	</BODY>
+</HTML>
+<script src="js/phaser.min.js"></script>
+<script src="js/n1_mobileversion.js"></script>
+<script>
+  
+  WebFontConfig = {
+  
+	  active: function() { game.time.events.add(Phaser.Timer.SECOND, createText, this); },
+  
+	  google: {
+		families: ['Revalia']
+	  }
+  
+  };
+  var config = {
+	  type: Phaser.AUTO,
+	  height: 720,
+	  width: 1280,
+	  backgroundColor: '#010101',
+	  parent: document.getElementById("divPhaser")
+  };
+  var game = new Phaser.Game(config);
+  game.state.add("n1",n1);
+  game.state.start("n1",n1);
+  </script> 
