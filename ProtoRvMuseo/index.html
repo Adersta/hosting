@@ -1,0 +1,120 @@
+<html>
+  <head>
+      <title>A-Frame Starter Kit - Mini Planetarium</title>
+      "Village Town" (https://skfb.ly/6GKIM) by Shapesim VR level designer is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+      <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script> 
+      <script src="js/movement.js"></script>   
+      
+  </head>
+  <body>
+      <a-scene id="escena" inspector="url: https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
+        --><a-cube position="-1 0.5 1" rotation="0 0 0" width="1" height="1" depth="1" color="#4CC3D9">
+          <a-animation attribute="position" to="1.351 0.1 0" direction="alternate-reverse" repeat="indefinite" easing="linear" dur="1000"></a-animation>
+          <a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation>
+        </a-cube>
+
+        <a-assets>
+          <video id="penguin-sledding" loop="false" src="vidio.mp4" ></video>
+          <img id="imagen1" scale="-0.029 0.018 -0.002" rotation="0 155 0" position="7.272 4.122 -6.417" src="imagen1.jpg">
+          <img id="imagen2" src="imagen2.jpg">
+          <img id="imagen3" src="imagen3.jpg">
+          <img id="imagen4" src="imagen4.jpg">
+          <img id="imagen5" src="imagen5.jpg">
+          <img id="imagen6" src="imagen6.jpg">
+          <audio id="audio1" loop="false" src="audio1.mp3"></audio>
+        </a-assets>
+
+        <a-sky color="#00FFEC"></a-sky>
+        <a-entity id="blueTPSphere" geometry="primitive: cylinder; radius:0.5; height:0.1" material="color:blue;roughness:1;opacity:0" position="4.42332 2.052 7.03248" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-2" geometry="primitive: cylinder;radius:0.5; height:0.1" material="color:blue;roughness:1;opacity:0" position="7.83636 2.052 2.80002" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-4" geometry="primitive: cylinder;radius:0.5; height:0.1" material="color:blue;roughness:1;opacity:0" position="5.98488 2.052 -4.13585" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-10" geometry="primitive: cylinder;radius:0.5; height:0.1" material="color:blue;roughness:1;opacity:0" position="7.66751 2.052 0.21877" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-11" scale="1 1 1" geometry="primitive: cylinder;radius:0.5; height:0.1" material="color:blue;roughness:1;opacity:0" position="-4.03574 2.052 -1.64989" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-12" geometry="primitive: cylinder;radius:0.5; height:0.1" material="color:blue;roughness:1" position="-0.51734 2.20044 1.07966" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-14" geometry="primitive: cylinder;radius:0.5; height:0.1" material="color:blue;roughness:1;opacity:0" position="3.22142 2.052 -1.96483" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-16" geometry="primitive: cylinder;radius:0.5; height:0.1" material="color:blue;roughness:1;opacity:0" position="-3.96672 2.052 4.57493" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-17" geometry="primitive: cylinder;radius:0.5; height:0.1" material="color:blue;roughness:1;opacity:0" position="-0.80292 2.05228 -1.59409" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-18" geometry="primitive: cylinder;radius:0.5; height:0.1" material="color:blue;roughness:1;opacity:0" position="7.83854 2.052 -3.45923" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-19" geometry="primitive: cylinder;radius:0.5; height:0.1" material="color:blue;roughness:1;opacity:0" position="1.41867 2.052 5.57048" class="puntosdecontrol" puntosdecontrol></a-entity>
+        <a-entity id="blueTPSphere-20" geometry="primitive: cylinder;radius:0.5; height:0.1"material="color:blue;roughness:1;opacity:0" position="7.07343 2.052 5.42935" class="puntosdecontrol" puntosdecontrol></a-entity>
+      <a-entity id="ninja01"
+                cursor-listener
+                scale="10 10 10"
+                position="0 2.84574 2.76826"
+                rotation="0 0 0"
+                gltf-model="src: url(resources/source/1.gltf);"       
+      ></a-entity>
+
+
+      <!--<a-entity id="accionador" scale="0.81562 0.81562 0.81562" geometry="primitive:sphere;radius:0.2" material="color:red;roughness:1" position="2.31122 3.4224 -0.27153" video></a-entity>
+      <a-entity id="accionador2" scale="0.81562 0.81562 0.81562" geometry="primitive:sphere;radius:0.2" material="color:red;roughness:1" position="2.47882 3.51204 3.3281" audio1></a-entity>
+-->
+      <a-plane id="imagen1" opacity="0" src="#imagen1" height="100" width="100" position="-7.445 3.992 -1.318" rotation="0 -90.000 0" scale="0.018 0.018 -0.002" class="cuadros" cuadros></a-plane>
+      
+      <a-plane id="imagen2" opacity="0" src="#imagen2" height="100" width="100" position="-3.863 4.162 -3.143" rotation="0 180 0" scale="0.013 0.018 -0.002" class="cuadros" cuadros></a-plane>
+      
+      <a-plane id="imagen3" opacity="0" src="#imagen3" height="100" width="100" position="0.254 4.162 -3.154" rotation="0 182.000 0" scale="0.013 0.018 -0.002" class="cuadros" cuadros></a-plane>
+      <a-plane id="imagen4" opacity="0" src="#imagen4" height="100" width="100" position="3.161 4.162 -4.076" rotation="0 215.000 0" scale="0.013 0.018 -0.002" class="cuadros" cuadros></a-plane>
+
+      <a-plane id="imagen4.5"  opacity="0" src="#imagen6" height="100" width="100" position="5.093 4.162 -6.08422" rotation="0 240 0" scale="0.013 0.018 -0.002" class="cuadros" cuadros></a-plane>
+
+      <a-plane id="imagen5" opacity="0" src="#imagen5" height="100" width="100" position="7.343 4.172 -6.545" rotation="0 160.000 0" scale="-0.029 0.018 -0.002" class="cuadros" cuadros></a-plane>
+      <a-plane id="imagen6" opacity="0" src="#imagen6" height="100" width="100" position="9.00541 4.17168 -3.475" rotation="0 90.000 0" scale="-0.029 0.018 -0.002" class="cuadros" cuadros></a-plane>
+
+      <a-plane id="imagen7" opacity="0" src="#imagen6" height="100" width="100" position="9.00541 4.17168 0.80848" rotation="0 90 0" scale="-0.029 0.018 -0.002" class="cuadros" cuadros></a-plane>
+
+      <a-plane id="imagen8" opacity="0" src="#imagen5" height="100" width="100" position="9.05175 4.146 4.73189" rotation="0 90.000 0" scale="0.013 0.018 -0.002" class="cuadros" cuadros></a-plane>
+      <a-plane id="imagen9" opacity="0" src="#imagen6" height="100" width="100" position="5.402 4.141 7.487" rotation="-0.500 47.770 0" scale="-0.029 0.018 -0.002" class="cuadros" cuadros></a-plane>
+
+      <a-plane id="imagen10" opacity="0" src="#imagen5" height="100" width="100" position="2.44772 4.14539 7.63616" rotation="0 -39.23476 0" scale="-0.029 0.018 -0.002" class="cuadros" cuadros></a-plane>
+      <a-plane id="imagen11" opacity="0" src="#imagen6" height="100" width="100" position="-1.34381 4.12379 6.30097" rotation="0 0 0" scale="0.013 0.018 -0.002" class="cuadros" cuadros></a-plane>
+
+      <a-plane id="imagen12"  opacity="0" src="#imagen5" height="100" width="100" position="-4.63038 4.18592 6.27692" rotation="0 2 0" scale="-0.029 0.018 -0.002" class="cuadros" cuadros></a-plane>
+
+      <a-plane id="imagen13"  opacity="0" src="#imagen5" height="100" width="100" position="2.551 3.455 1.446" rotation="0 90.000 0" scale="-0.029 0.018 -0.002" class="cuadros" cuadros></a-plane>
+
+      <a-entity id="accionador3" scale="0.4 0.4 0.4"  position="-7.445 2.778 -1.318"  geometry="primitive:sphere;radius:0.2" material="color:red;roughness:1"  cerrar></a-entity>
+      <a-entity id="accionador3" scale="0.4 0.4 0.4"  position="-3.863 2.778 -3.143"  geometry="primitive:sphere;radius:0.2" material="color:red;roughness:1"  cerrar></a-entity>
+      <a-entity id="accionador3" scale="0.4 0.4 0.4"  position="0.254 2.778 -3.154"  geometry="primitive:sphere;radius:0.2" material="color:red;roughness:1"  cerrar></a-entity>
+      <a-entity id="accionador3" scale="0.4 0.4 0.4"  position="3.161 2.778 -4.076"  geometry="primitive:sphere;radius:0.2" material="color:red;roughness:1"  cerrar></a-entity>
+      <a-entity id="accionador3" scale="0.4 0.4 0.4"  position="5.093 2.778 -6.08422"  geometry="primitive:sphere;radius:0.2" material="color:red;roughness:1"  cerrar></a-entity>
+      <a-entity id="accionador3" scale="0.4 0.4 0.4"  position="7.343 2.778 -6.545"  geometry="primitive:sphere;radius:0.2" material="color:red;roughness:1"  cerrar></a-entity>
+      <a-entity id="accionador3" scale="0.4 0.4 0.4"  position="9.00541 2.778 -3.475"  geometry="primitive:sphere;radius:0.2" material="color:red;roughness:1"  cerrar></a-entity>
+      <a-entity id="accionador3" scale="0.4 0.4 0.4"  position="9.00541 2.778 0.80848"  geometry="primitive:sphere;radius:0.2" material="color:red;roughness:1"  cerrar></a-entity>
+      <a-entity id="accionador3" scale="0.4 0.4 0.4"  position="9.05175 2.778 4.73189"  geometry="primitive:sphere;radius:0.2" material="color:red;roughness:1"  cerrar></a-entity>
+      <a-entity id="accionador3" scale="0.4 0.4 0.4"  position="5.402 2.778 7.487"  geometry="primitive:sphere;radius:0.2" material="color:red;roughness:1"  cerrar></a-entity>
+      <a-entity id="accionador3" scale="0.4 0.4 0.4"  position="2.44772 2.778 7.63616"  geometry="primitive:sphere;radius:0.2" material="color:red;roughness:1"  cerrar></a-entity>
+      <a-entity id="accionador3" scale="0.4 0.4 0.4"  position="-1.34381 2.778 6.30097"  geometry="primitive:sphere;radius:0.2" material="color:red;roughness:1"  cerrar></a-entity>
+      <a-entity id="accionador3" scale="0.4 0.4 0.4"  position="-4.63038 2.778 6.27692"  geometry="primitive:sphere;radius:0.2" material="color:red;roughness:1"  cerrar></a-entity>
+
+
+      <!--<a-plane id="imagen13"  opacity="1" src="#imagen6" height="100" width="100" position="-1.566 3.402 -8.521" rotation="0 180.010 0" scale="0.014 0.022 -0.002" class="cuadros" cuadros></a-plane>
+
+      <a-plane id="imagen14" opacity="1" src="#imagen5" height="100" width="100" position="-1.955 3.402 -2.322" rotation="0 180.010 0" scale="0.014 0.022 -0.002" class="cuadros" cuadros></a-plane>
+      <a-plane id="imagen15" opacity="1" src="#imagen6" height="100" width="100" position="-3.55914 4.24237 -3.14287" rotation="0 180.010 0" scale="0.01011 0.01589 -0.00144" class="cuadros" cuadros></a-plane>
+      <a-plane id="imagen16" opacity="1" src="#imagen5" height="100" width="100" position="-5.224 3.402 -2.322" rotation="0 180.010 0" scale="0.014 0.022 -0.002" class="cuadros" cuadros></a-plane>
+
+      <a-plane id="imagen17" src="#imagen3" height="100" width="100" position="9.77024 4.122 -11.77449" rotation="0 155 0" scale="-0.029 0.018 -0.002"></a-plane>
+
+      -->
+      <!--<a-video src="#penguin-sledding" width="16" height="9" position="0.285 3.941 0.390" rotation="0 -90.000 0" scale="-0.096 -0.096 -0.096 "></a-video>
+    
+       Using the asset management system. 
+      <a-video src="#penguin-sledding" width="16" height="9" position="-8.45172 6.08162 -11.73937" rotation= "0 13.796823706750223 0"></a-video>-->
+
+      <a-entity position="2.24003 2 5.23108" scale="1 1 1" id="player" animation="property: position; dur: 1000; startEvents: go">
+        <a-camera look-controls wasd-controls-enabled="false">
+          <a-entity position="0 -0.6 -1" material="opacity: 0.0; transparent: true" geometry="primitive:plane;height:3;width:7" 
+          text="align:center;color:#322342;
+          value:asdsad
+          ;width:50" id="text-health-player" scale="0.04 0.04 0.04" color="#322342">
+          </a-entity>
+          <a-entity cursor="fuse: true; fuseTimeout: 500" position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" 
+          material="color: green; shader: flat">     
+         </a-entity>             
+        </a-camera>
+        <!--<a-entity id="accionador3" scale="0.4 0.4 0.4"  position="0 1.147 -1.08"  geometry="primitive:sphere;radius:0.2" material="color:red;roughness:1"  cerrar></a-entity>-->
+      </a-entity>    
+      </a-scene>
+  </body>
+</html>
