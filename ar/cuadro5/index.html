@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>  
+  <head>
+    <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+  </head>   
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs>
+      <a-assets>
+        <a-asset-item id="model3d" src="1.gltf"></a-asset-item>
+      </a-assets>
+      <a-entity scale=".02 .02 .02"> 
+        <a-entity gltf-model="url(1.gltf)" scale="0.5 0.5 0.5" crossOrigin="anonymous"></a-entity>
+        <a-marker-camera preset='kanji'></a-marker-camera>     
+      </a-entity>  
+      
+      
+      <div style='position: absolute; top: 10px; width:100%; text-align: center; z-index: 1;'>
+        <button  style="color: #0099CC; border: 2px solid #0099CC; border-radius: 6px;">
+            Reproducir Audio 
+            <br>
+            Presione nuevamente el boton para reiniciar el audio
+        </button>
+    </div>
+  </a-scene>
+  </body>
+</html>
+
+<script>
+
+  const audio = document.createElement("audio");
+  audio.preload = "auto";
+  audio.src = "audio1.mp3";
+  document.body.appendChild(audio);
+  
+  document.querySelector("button").addEventListener("click", (e)=> {
+
+    if(!audio.paused){
+      audio.pause();
+      audio.currentTime = 0;
+      audio.play();
+    }else{
+      audio.play();
+    }
+})
+</script>
